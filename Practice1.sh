@@ -4,7 +4,7 @@ VAR="Chandu"
 $NAME="Chandu"
 #echo "$VAR"
 
-if [ $NAME == $VAR ]
+if [ $NAME == "Chandu" ]
 then
  echo "GOOD"
 else 
