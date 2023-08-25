@@ -1,4 +1,4 @@
-DATE=$(date+%F)
+DATE=$(date +%F)
 SCRIPT_NAME=$0
 LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 
@@ -29,10 +29,10 @@ fi
 VALIDATE () {
     if [ $1 -ne 0 ]
 then 
-  echo "$R Installing $2 is failure $N"
+  echo -e "$R Installing $2 is failure $N"
   exit 1
 else
-  echo "$G Installing $2 success $N" 
+  echo -e "$G Installing $2 success $N" 
 fi    
 }
 
@@ -41,7 +41,7 @@ yum install git -y &>>$LOGFILE
 
 VALIDATE $? "git"
 
-yum install mysqldd
+yum install mysqldd  &>>$LOGFILE
 
 
-VALIDATE $? "mysql"  &>>$LOGFILE
+VALIDATE $? "mysql"  
