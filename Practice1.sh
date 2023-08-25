@@ -20,6 +20,7 @@ echo "$SUM"
 
 #for i in 
 
+
 echo "please enter username"
 
 read -s USERNAME # this is the variable where the value of  one user enterd
@@ -30,3 +31,6 @@ echo "please enter password"
 
 read -s PASSWORD 
  echo "password entered is:$PASSWORD"
+
+NUMBERS=(1 2 3 4 5 6)
+echo "Printing numbers:$NUMBERS{[@]} 
