@@ -15,7 +15,7 @@ DATE=$(date)
 
 echo "Today date is $DATE"
 
-SUM=$VAR + $NAME 
+SUM=$((VAR +NAME)) 
 echo "$SUM"
 
 #for i in 
