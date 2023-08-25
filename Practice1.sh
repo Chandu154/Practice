@@ -1,7 +1,7 @@
 #!/bin/bash
 
-VAR="Chandu"
-NAME="Chandu"
+VAR=$1
+NAME=$2
 #echo "$VAR"
 
 if [ $NAME == $VAR ]
@@ -10,3 +10,6 @@ then
 else 
  echo "BAD"
 fi
+
+
+for i in 
