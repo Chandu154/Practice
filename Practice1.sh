@@ -41,4 +41,12 @@ echo "Printing numbers:${NUMBERS[@]}"
 echo "first one $VAR ,second one $NAME"
 
 
+v='a'
+b='v'
+
+echo '$@'
+echo '$#'
+echo 'scriptname; $0'
+
+
 
