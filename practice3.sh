@@ -2,7 +2,7 @@
 DATE=$(date +%F)
 
 SCRIPT_NAME=$0
-LOGSDIR=/home/centos/practice.log
+LOGSDIR=/home/centos/practice-log
 #/home/centos/shellscript-logs-scriptname-date.log
 LOGFILE=$LOGSDIR/$0-$DATE.log
 
