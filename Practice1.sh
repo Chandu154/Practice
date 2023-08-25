@@ -11,5 +11,8 @@ else
  echo "BAD"
 fi
 
+DATE=$(date)
+
+echo "Today date is $DATE"
 
 #for i in 
