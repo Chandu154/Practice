@@ -33,4 +33,4 @@ read -s PASSWORD
  echo "password entered is:$PASSWORD"
 
 NUMBERS=(1 2 3 4 5 6)
-echo "Printing numbers:$NUMBERS{[@]} 
+echo "Printing numbers:$NUMBERS{[@]}" 
