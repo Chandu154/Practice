@@ -48,5 +48,12 @@ echo " $@ "
 echo " $# "
 echo "scriptname; $0"
 
+# for loop
+
+for i in {1..100}
+do
+echo "Number:$1"
+
+done
 
 
