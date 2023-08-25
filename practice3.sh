@@ -2,7 +2,7 @@
 DATE=$(date +%F)
 
 SCRIPT_NAME=$0
-LOGSDIR=/home/centos/shellscript-logs
+LOGSDIR=/home/centos/practice.log
 #/home/centos/shellscript-logs-scriptname-date.log
 LOGFILE=$LOGSDIR/$0-$DATE.log
 
@@ -34,7 +34,7 @@ VALIDATE(){
 
 for i in $@
 do
-yum list install $i
+yum list install $i &>>$LOGFILE
   if [ $? -ne 0 ]
     then 
     echo "lets install the $i"
