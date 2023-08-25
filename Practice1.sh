@@ -15,4 +15,7 @@ DATE=$(date)
 
 echo "Today date is $DATE"
 
+SUM=$1 + $2
+echo "$SUM"
+
 #for i in 
