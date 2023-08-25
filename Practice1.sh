@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VAR="Chandu"
-$NAME="Chandu"
+NAME="Chandu"
 #echo "$VAR"
 
 if [ $NAME == "Chandu" ]
