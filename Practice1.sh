@@ -52,7 +52,7 @@ echo "scriptname; $0"
 
 for i in {1..100}
 do
-echo "Number:$1"
+echo "Number:$i"
 
 done
 
