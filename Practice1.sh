@@ -1,8 +1,8 @@
 #!/bin/bash
 
 VAR="Chandu"
-$NAME=""
-echo "$VAR"
+$NAME="Chandu"
+#echo "$VAR"
 
 if [ $NAME == $VAR ]
 then
