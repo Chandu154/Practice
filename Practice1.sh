@@ -35,3 +35,5 @@ read -s PASSWORD
 #Arry
 NUMBERS=(1 2 3 4 5 6)
 echo "Printing numbers:${NUMBERS[@]}" 
+
+echo "first one $VAR ,second one $NAME"
