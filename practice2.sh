@@ -10,3 +10,12 @@ then
 else
   echo "Installing with root access" 
 fi    
+
+if [ $? -ne 0 ]
+then 
+  echo "Installing git is failure"
+  exit 1
+else
+  echo "Installing git success" 
+fi    
+
