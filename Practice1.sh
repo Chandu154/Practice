@@ -4,6 +4,8 @@ VAR=$1
 NAME=$2
 #echo "$VAR"
 
+#conditions
+
 if [ $NAME == $VAR ]
 then
  echo "GOOD"

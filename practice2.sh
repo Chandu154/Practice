@@ -1,6 +1,13 @@
+DATE=$(date+%F)
+SCRIPT_NAME=$0
+LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 
-yum install git -y 
-yum install nginx
+
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+
+
 #code to  run with root access
 
 USERID=$(id -u)
@@ -15,32 +22,26 @@ fi
 
 #checking the previous command succes or not with exit status
 
-if [ $? -ne 0 ]
-then 
-  echo "Installing git is failure"
-  exit 1
-else
-  echo "Installing git success" 
-fi    
 
 #FUNCTIONS
+#It validate the executed statments success or not
 
 VALIDATE () {
     if [ $1 -ne 0 ]
 then 
-  echo "Installing $2 is failure"
+  echo "$R Installing $2 is failure $N"
   exit 1
 else
-  echo "Installing $2 success" 
+  echo "$G Installing $2 success $N" 
 fi    
 }
 
 
-yum install git -y 
+yum install git -y &>>$LOGFILE
 
 VALIDATE $? "git"
 
-yum install mysql
+yum install mysqldd
 
 
-VALIDATE $? "mysql"
+VALIDATE $? "mysql"  &>>$LOGFILE
