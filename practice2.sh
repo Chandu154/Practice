@@ -46,9 +46,3 @@ yum install mysqldd  &>>$LOGFILE
 
 VALIDATE $? "mysql"  
 
-v='a'
-b='v'
-
-echo '$@'
-echo '$#'
-echo 'scriptname; $0'
